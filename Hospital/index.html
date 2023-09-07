@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3 class="text-center mt-3">Insurance Page</h3>
+
+    <div class="m-5 d-flex justify-content-center align-items-center" id="patientForm">
+
+        <form class="w-100" id="insuranceForm">
+
+            <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            
+            <div class="form-group">
+                <label for="lawyer" class="form-label">Lawyer</label>
+                <input type="text" class="form-control" id="lawyer">
+            </div>
+            <div class="form-group">
+                <label for="state" class="form-label">State</label>
+                <input type="text" class="form-control" id="state">
+            </div>
+
+            <div class="form-group my-2">
+                <label for="treatment" class="form-label">Treatment</label>
+                <select id="treatment" class="form-select w-100">
+                    <option value="1">Ortopediks</option>
+                    <option value="2">Dental Treatment</option>
+                    <option value="3">Psychology</option>
+                    <option value="4">Norology</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-2">
+                <label for="insurance" class="form-label">Insurance</label>
+                <select id="insurance" class="form-select w-100">
+                    <option value="1">Insurance A</option>
+                    <option value="2">Insurance B</option>
+                    <option value="3">Insurance C</option>
+                    <option value="4">Insurance D</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 w-100" id="formBtn">Submit</button>
+        </form>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <!-- <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modalCloseBtn">Close</button>
+            </div>
+          </div>
+        </div> -->
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modalCloseBtn">Close</button>
+
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
